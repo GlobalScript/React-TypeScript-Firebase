@@ -1,0 +1,49 @@
+@import "./basketDetail";
+@import "./basketForm";
+
+.basket {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket__form-component {
+    order: 2;
+}
+
+.basket__detail-component {
+    order: 1;
+}
+
+@media(min-width: 992px) {
+    .basket {
+        padding: 5% 0;
+    }
+}
+
+@media(min-width:768px) {
+    .basket__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .basket__form-component {
+        order: 1;
+    }
+
+    .basket__detail-component {
+        order: 2;
+
+        hr {
+            display: none;
+        }
+    }
+}

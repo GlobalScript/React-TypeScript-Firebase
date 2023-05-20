@@ -1,0 +1,84 @@
+.basket__form {
+    padding: 20px;
+}
+
+.basket__form-title {
+    text-align: center;
+    color: $labelColor;
+}
+
+.basket__input {
+    width: 100%;
+    height: 25px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: $placeholderColor;
+}
+
+.basket__grid-container {
+    display: grid;
+    grid-row-gap: 20px;
+    padding: 30px;
+}
+
+.basket__label-account {
+    color: $labelColor;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.basket__gender-radio {
+    margin: 5px;
+}
+
+.basket__actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 55px;
+    padding: 15px 30px;
+    border-top: 1px solid $borderColor;
+    border-radius: 0 0 5px 5px;
+}
+
+.basket__submit {
+    @include btnStyle;
+    padding-right: 10px;
+    margin: 10px;
+
+}
+
+.basket__submit-disabled {
+    cursor: auto;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    pointer-events: none;
+}
+
+.basket__form-error {
+    height: 15px;
+}
+
+.basket__form-error-message {
+    color: red;
+    font-size: 16px;
+}
+
+@media (min-width: 992px) {
+    .basket__grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+
+    .basket__row {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.content {
+    min-height: calc(100vh - 326px);
+}
+
+$labelColor: #ff854d;
+$textColor: #666;
+$borderColor: #ccc;
+$placeholderColor: #d9d9d9;
+$buttonTextColor: #bcf5e7;
+$presentationTextColor: #8d8b8b;
+$speechBgColor: #ffe5b4;
+// --navbar and footer--
+$bgColor: black;
+$lightTextColor: rgb(202, 193, 193);
+$footerIcon: #cfd2d6;
+$navbarTextColor: white;
+$hoverColor: #ff854d;
+
+@mixin btnStyle {
+    background-color: white;
+    color: $labelColor;
+    border: 1px solid $labelColor;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 16px;
+
+    &:hover {
+        background-color: $labelColor;
+        color: white;
+        border: 1px solid $labelColor;
+    }
+}

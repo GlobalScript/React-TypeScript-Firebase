@@ -1,0 +1,145 @@
+@import "../../App.scss";
+
+.footer {
+    padding-top: 20px;
+    background-color: $bgColor;
+    color: $lightTextColor;
+    font-size: 16px;
+
+    * {
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: left;
+        color: $lightTextColor;
+        font-size: 1.4em;
+        white-space: nowrap;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        li {
+            &:not(:first-child) {
+                margin-top: 0.8em;
+            }
+
+            a {
+                color: $lightTextColor;
+                text-decoration: none;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+
+    input,
+    button {
+        font-size: 1em;
+        padding: 1em;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    button {
+        background-color: #c7940a;
+        color: #ffffff;
+    }
+}
+
+.footer__row {
+    padding: 1em 1em;
+}
+
+.footer__primary {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: stretch;
+    padding: 0 0 0 10%;
+}
+
+.footer__column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+
+
+.footer__about {
+
+    p {
+        line-height: 2;
+        margin: 0;
+    }
+
+}
+
+
+
+.footer__social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4em;
+    flex-direction: row;
+    margin-top: 1.5em;
+
+    i {
+        color: #bac6d9;
+        cursor: pointer;
+    }
+}
+
+
+.footer__links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__copyright {
+    padding: 0.3em 1em;
+    background-color: $bgColor;
+    border-top: 1px solid $lightTextColor;
+
+    p {
+        font-size: 0.9em;
+        text-align: right;
+    }
+}
+
+.footer__menu {
+    float: left;
+    margin-top: 10px;
+
+    a {
+        color: $footerIcon;
+        padding: 6px;
+
+        text-decoration: none;
+
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer__primary {
+        grid-template-columns: 1fr;
+    }
+
+}
